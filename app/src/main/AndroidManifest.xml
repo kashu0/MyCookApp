@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.androidstudioprojects.mycookapp">
+
+    <!-- 인터넷 사용 권한 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -15,6 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCookApp">
+
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,31 +36,59 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.LoginActivity">
+
         </activity>
         <activity android:name=".activity.SignUpActivity">
+
         </activity>
         <activity android:name=".activity.PasswordResetActivity">
+
         </activity>
         <activity android:name=".activity.MemberInitActivity">
+
         </activity>
         <activity android:name=".activity.CameraActivity">
+
         </activity>
         <activity android:name=".activity.GalleryActivity">
+
         </activity>
         <activity android:name=".activity.BasicActivity">
+
         </activity>
         <activity android:name=".activity.WritePostActivity">
+
         </activity>
         <activity android:name=".activity.PostActivity">
+
         </activity>
 
         <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <!-- Facebook에 대한 활동, Chrome 맞춤 탭에 대한 활동 및 인텐트 필터를 application 요소 내에 추가합니다.-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="405358724254687" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
 
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

@@ -116,4 +116,10 @@ public class MainActivity extends BasicActivity {
         Intent intent = new Intent(this, c);
         startActivityForResult(intent, 1);
     }
+
+    public void signOut() {
+        // [START auth_sign_out]
+        FirebaseAuth.getInstance().signOut();
+        // [END auth_sign_out]
+    }
 }

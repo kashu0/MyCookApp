@@ -59,6 +59,7 @@ public class MemberInitActivity extends BasicActivity {
         findViewById(R.id.checkButton).setOnClickListener(onClickListener);
         findViewById(R.id.picture).setOnClickListener(onClickListener);
         findViewById(R.id.gallery).setOnClickListener(onClickListener);
+        findViewById(R.id.logoutButton).setOnClickListener(onClickListener);
     }
 
     @Override
@@ -101,6 +102,8 @@ public class MemberInitActivity extends BasicActivity {
                 case R.id.gallery:
                     myStartActivity(GalleryActivity.class);
                     break;
+                case R.id.logoutButton:
+                    myStartActivity(SignUpActivity.class);
             }
         }
     };

@@ -39,8 +39,8 @@ public class LoginActivity extends BasicActivity {
 
         findViewById(R.id.loginButton).setOnClickListener(onClickListener);
         findViewById(R.id.passwordResetButton).setOnClickListener(onClickListener);
-        findViewById(R.id.facebookButton).setOnClickListener(onClickListener);
-        findViewById(R.id.googleButton).setOnClickListener(onClickListener);
+        //findViewById(R.id.facebookButton).setOnClickListener(onClickListener);
+        //findViewById(R.id.googleButton).setOnClickListener(onClickListener);
     }
     private void getHashKey(){
         PackageInfo packageInfo = null;
@@ -89,12 +89,12 @@ public class LoginActivity extends BasicActivity {
                 case R.id.passwordResetButton:
                     myStartActivity(PasswordResetActivity.class);
                     break;
-                case R.id.facebookButton:
-                    myStartActivity(FacebookLoginActivity.class);
-                    break;
-                case R.id.googleButton:
-                    myStartActivity(GoogleSignInActivity.class);
-                    break;
+           //     case R.id.facebookButton:
+           //         myStartActivity(FacebookLoginActivity.class);
+           //         break;
+           //     case R.id.googleButton:
+           //         myStartActivity(GoogleSignInActivity.class);
+            //        break;
             }
         }
     };

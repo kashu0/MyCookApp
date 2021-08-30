@@ -38,7 +38,7 @@ public class MainActivity extends BasicActivity {
     }
 
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
     }
 
@@ -52,7 +52,7 @@ public class MainActivity extends BasicActivity {
         }
     }
 
-    private void init(){
+    private void init() {
         FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         if (firebaseUser == null) {
             myStartActivity(SignUpActivity.class);
@@ -117,9 +117,4 @@ public class MainActivity extends BasicActivity {
         startActivityForResult(intent, 1);
     }
 
-    public void signOut() {
-        // [START auth_sign_out]
-        FirebaseAuth.getInstance().signOut();
-        // [END auth_sign_out]
-    }
 }

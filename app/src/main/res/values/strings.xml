@@ -10,9 +10,9 @@
 
     <!-- 페이스북 -->
     <!-- 페이스북 앱 키-->
-    <string name="facebook_app_id">364009515383544</string>
+<!--    <string name="facebook_app_id">364009515383544</string>
     <string name="fb_login_protocol_scheme">fb405358724254687</string>
     <string name="facebook_client_token">3322e540c8a8c4e19b6bea4df20dbb9f</string>
-    <string name="loginFacebookButton">페이스북으로 로그인</string>
+    <string name="loginFacebookButton">페이스북으로 로그인</string>-->
 
 </resources>

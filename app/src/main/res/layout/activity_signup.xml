@@ -89,13 +89,13 @@
                 android:layout_weight="1"
                 android:text="확인" />
 
-            <com.facebook.login.widget.LoginButton
+  <!--          <com.facebook.login.widget.LoginButton
                 android:id="@+id/facebookButton"
                 style="@style/AppTheme"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 app:login_text="@string/loginFacebookButton"
-                app:logout_text="페이스북 아이디 로그아웃" />
+                app:logout_text="페이스북 아이디 로그아웃" />-->
 
             <Button
                 android:id="@+id/twitterButton"
@@ -105,13 +105,13 @@
                 android:layout_weight="1"
                 android:text="트위터로 로그인" />
 
-            <com.google.android.gms.common.SignInButton
+<!--            <com.google.android.gms.common.SignInButton
                 android:id="@+id/googleButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Google로 로그인" />
+                android:text="Google로 로그인" />-->
 
             <TextView
                 android:layout_width="match_parent"

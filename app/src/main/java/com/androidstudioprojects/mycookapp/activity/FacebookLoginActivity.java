@@ -1,4 +1,7 @@
+/**
 package com.androidstudioprojects.mycookapp.activity;
+ *//*
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,9 +25,11 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+*/
 /**
  * Demonstrate Firebase Authentication using a Facebook access token.
- */
+ *//*
+
 public class FacebookLoginActivity extends BasicActivity {
 
     private static final String TAG = "FacebookLogin";
@@ -118,3 +123,4 @@ public class FacebookLoginActivity extends BasicActivity {
 
     }
 }
+*/

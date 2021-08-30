@@ -17,13 +17,12 @@ public class BasicActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
 
     }
-
    @Override
     public void setContentView(@LayoutRes int layoutResID) {
         super.setContentView(layoutResID);
-
-        Toolbar myToolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(myToolbar);
+//
+//        Toolbar myToolbar = findViewById(R.id.toolbar);
+//        setSupportActionBar(myToolbar);
     }
 
     public void setToolbarTitle(String title){
@@ -32,4 +31,5 @@ public class BasicActivity extends AppCompatActivity {
             actionBar.setTitle(title);
         }
     }
+
 }
